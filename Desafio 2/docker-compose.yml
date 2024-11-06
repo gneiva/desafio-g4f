@@ -22,8 +22,8 @@ services:
     environment:
       - SPRING_MAIL_HOST=smtp.gmail.com
       - SPRING_MAIL_PORT=587
-      - SPRING_MAIL_USERNAME=gneivamachado@gmail.com
-      - SPRING_MAIL_PASSWORD=lbll zyfe ehmg avks
+      - SPRING_MAIL_USERNAME=e-mail@gmail.com
+      - SPRING_MAIL_PASSWORD=senha_app
       - SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true
       - SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE=true
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
