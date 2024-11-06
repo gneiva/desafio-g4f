@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  cartoes-ms:
+    build:
+      context: ./cartoes-ms
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:h2:mem:cartoesdb;DB_CLOSE_DELAY=-1
+      - SPRING_DATASOURCE_DRIVER_CLASS_NAME=org.h2.Driver
+      - SPRING_DATASOURCE_USERNAME=sa
+      - SPRING_DATASOURCE_PASSWORD=
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - EMISSOR_MS_URL=http://emissor-ms:8080/api/cards/issue
+
+  emissor-ms:
+    build:
+      context: ./emissor-ms
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_MAIL_HOST=smtp.seuservidordeemail.com
+      - SPRING_MAIL_PORT=587
+      - SPRING_MAIL_USERNAME=seuemail@example.com
+      - SPRING_MAIL_PASSWORD=suasenha
+      - SPRING_MAIL_PROPERTIES_MAIL_SMTP_AUTH=true
+      - SPRING_MAIL_PROPERTIES_MAIL_SMTP_STARTTLS_ENABLE=true
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+
+  frontend:
+    build:
+      context: ./client/cartao-proposta
+    ports:
+      - "3000:80"

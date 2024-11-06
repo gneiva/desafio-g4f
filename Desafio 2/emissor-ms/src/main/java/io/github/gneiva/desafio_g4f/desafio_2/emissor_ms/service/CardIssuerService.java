@@ -18,18 +18,17 @@ public class CardIssuerService {
     }
 
     public CreditCard issueCard(String clientName, String clientEmail, BigDecimal creditLimit, Long proposalId) {
-        // Cria o cartão de crédito com um número gerado
+        //TODO Implementar todas as regras para criação do cartão de crédito, aqui vamos apenas criar um cartão com um numero aleatório simulando a criação
         CreditCard card = new CreditCard();
         card.setCardNumber(generateCardNumber());
 
-        // Envia o e-mail de notificação com todos os dados do cartão
         notificationService.sendCardNotification(clientEmail, clientName, card.getCardNumber(), creditLimit, proposalId);
-
         return card;
     }
 
     private String generateCardNumber() {
-        return "4000-1234-5678-9010"; // Exemplo, substituir por lógica real
+    	//TODO implementar regra para gerar um número de cartão válido, para fins de simulação vamos retornar um número fixo    	
+        return "4000-1234-5678-9010";
     }
 }
 
