@@ -97,5 +97,8 @@ Para aprimorar o projeto e aumentar sua confiabilidade e manutenibilidade, é re
 + **Segurança e Autenticação:** Implementar autenticação e autorização para proteger os endpoints, especialmente em um ambiente de produção.
 + **Monitoramento e Logging:** Adicionar monitoramento para rastrear o uso e desempenho dos serviços, além de um sistema de logs para diagnosticar problemas rapidamente.
 + **Integração com Banco de Dados Persistente:** Migrar do H2 para um banco de dados persistente, como PostgreSQL, para ambientes de produção.
++ **Monitoramento e Logs:** Implementar ferramentas de monitoramento e gerenciamento de logs, como Prometheus e Grafana para monitoramento, melhoraria a observabilidade do sistema.
 + **Mensageria com Kafka ou RabbitMQ:** Utilizar um sistema de mensageria para comunicação assíncrona entre os microserviços.
+
+
 
