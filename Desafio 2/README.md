@@ -88,6 +88,8 @@ docker-compose up --build
 
 4 - Acesse http://localhost:3000 para visualizar o formulário.
 
+5 - Para testar o endpoint pelo Postman, importe a collection "**Desafio G4F.postman_collection.json**" no postman
+
 ## Evoluções Futuras
 
 Para aprimorar o projeto e aumentar sua confiabilidade e manutenibilidade, é recomendável:
