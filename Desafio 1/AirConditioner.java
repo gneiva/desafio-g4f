@@ -10,7 +10,7 @@ public class AirConditioner implements Device {
     @Override
     public void turnOn() {
         if (!isOn) {
-        	//TODO Implementar a lógica para ligar o ar-condicionado
+        	//TODO chamar serviço para ligar o ar-condicionado
             isOn = true;
             System.out.println("O device: " + name + " foi ligado");
         } else {
@@ -21,7 +21,7 @@ public class AirConditioner implements Device {
     @Override
     public void turnOff() {
         if (isOn) {
-        	//TODO Implementar a lógica para desligar o ar-condicionado
+        	//TODO chamar serviço para desligar o ar-condicionado
             isOn = false;
             System.out.println("O device: " + name + " foi desligado");
         } else {

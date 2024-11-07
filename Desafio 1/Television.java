@@ -10,7 +10,7 @@ public class Television implements Device {
     @Override
     public void turnOn() {
         if (!isOn) {
-        	//TODO Implementar a lógica para ligar a televisão
+        	//TODO chamar serviço para ligar a televisão
             isOn = true;
             System.out.println("O device: " + name + " foi ligado");
         } else {
@@ -21,7 +21,7 @@ public class Television implements Device {
     @Override
     public void turnOff() {
         if (isOn) {
-        	//TODO Implementar a lógica para desligar a televisão
+        	//TODO chamar serviço para desligar a televisão
             isOn = false;
             System.out.println("O device: " + name + " foi desligado");
         } else {
