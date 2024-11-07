@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "12e88bbb-8768-4976-8338-bd863824b7fc",
+		"name": "Desafio G4F",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1061612",
+		"_collection_link": "https://seguro-auto.postman.co/workspace/Sicoob~38645537-b9e2-47b3-a9ad-800abe52a6d9/collection/1061612-12e88bbb-8768-4976-8338-bd863824b7fc?action=share&source=collection_link&creator=1061612"
+	},
+	"item": [
+		{
+			"name": "proposta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\":\"Gabriel\", \r\n   \"clientEmail\":\"gabrielneiva@hotmail.com\",\r\n   \"limit\":\"10000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/api/proposals",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"proposals"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
